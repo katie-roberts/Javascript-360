@@ -1,0 +1,11 @@
+layered files
+
+AO		100% overlay
+reflection 	100% Screen
+Diffuse render 	100% Normal
+Base render	100% Normal
+bg		100% Normal
+
+You Can change the colour of the diffuse layer in flash, giving you all colours.
+when doing this you will have to reduce the reflection % according to the Paint colour.
+the base and the BG could be flatened.
