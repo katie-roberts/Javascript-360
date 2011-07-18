@@ -46,9 +46,10 @@ Colouriser = (function( colouriser )
 	//	_threesixty.addEvent( 'mousedown', startClickRotation );
 	//	_threesixty.addEvent( 'mouseup', stopRotation );
 		
+        // TODO - this needs to be in a for loop
+        
 		$( 'redBtn' ).addEvent('click', function()
 			{
-
 				changeColour('#ff0000');
 			})
 		$( 'greenBtn' ).addEvent('click', function()
@@ -247,7 +248,7 @@ Colouriser = (function( colouriser )
 	{
 		e.preventDefault();
 	
-		_delta = e.touches ? _initialX - e.touches[0].pageX : _initialX - e.page.x;
+		_delta = -(e.touches ? _initialX - e.touches[0].pageX : _initialX - e.page.x);
 		var round = _delta > 0 ? Math.ceil : Math.floor;
 		_delta = Math.abs( _delta ) > 500 ? 5 : round( _delta / ( 1.6 * _framerate ) );
 	}

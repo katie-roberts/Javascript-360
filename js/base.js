@@ -1,6 +1,6 @@
 // Ford 360 colouriser
 //
-// Wunderman 2010
+// Moogster31 2010
 //
 // Provides: colouriser
 
